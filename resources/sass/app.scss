@@ -1,0 +1,43 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.concessionaire-list {
+    height: 550px;
+    min-height: 400px;
+    overflow-y: auto;
+}
+
+.overlay-status {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+
+    .point {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+}
+
+.blinking {
+    animation: blink 45s infinite;
+}
+
+.blinking {
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
