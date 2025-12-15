@@ -4,9 +4,7 @@
 		{{-- LOGO --}}
 		<div class="header-logo">
 			<a href="#" class="nav-link text-uppercase fw-bold">
-				<img src="{{ asset(config('app.product') === 'novustream'
-                    ? 'images/novustreamlogo.png'
-                    : 'images/novusurgelogo.png') }}"
+				<img src="{{ asset('images/novu.png') }}"
 				alt="Logo" style="width: 100px;">
 			</a>
 		</div>

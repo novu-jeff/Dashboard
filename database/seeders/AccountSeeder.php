@@ -27,6 +27,58 @@ class AccountSeeder extends Seeder
         );
 
         Admin::updateOrCreate(
+            ['email' => 'mrbc@kaelco.com.ph'],
+            [
+                'name' => 'Admin User',
+                'email' => 'mrbc@kaelco.com.ph',
+                'user_type' => 'admin',
+                'email_verified_at' => now(),
+                'password' => Hash::make('kaelco@novu'),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]
+        );
+
+        Admin::updateOrCreate(
+            ['email' => 'isd@kaelco.com.ph'],
+            [
+                'name' => 'Admin User',
+                'email' => 'isd@kaelco.com.ph',
+                'user_type' => 'admin',
+                'email_verified_at' => now(),
+                'password' => Hash::make('kaelco@novu'),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]
+        );
+
+        Admin::updateOrCreate(
+            ['email' => 'bobick.moreno@kaelco.com.ph'],
+            [
+                'name' => 'Admin User',
+                'email' => 'bobick.moreno@kaelco.com.ph',
+                'user_type' => 'admin',
+                'email_verified_at' => now(),
+                'password' => Hash::make('kaelco@novu'),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]
+        );
+
+        Admin::updateOrCreate(
+            ['email' => 'kaelcodev@gmail.com'],
+            [
+                'name' => 'Admin User',
+                'email' => 'kaelcodev@gmail.com',
+                'user_type' => 'admin',
+                'email_verified_at' => now(),
+                'password' => Hash::make('kaelco@novu'),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]
+        );
+
+        Admin::updateOrCreate(
             ['email' => 'cashier@gmail.com'],
             [
                 'name' => 'Cashier User',

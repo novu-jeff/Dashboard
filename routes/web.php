@@ -20,9 +20,9 @@ Route::get('/', function () {
 // ------------------------
 // Authentication
 // ------------------------
-Route::get('/login', [LoginController::class, 'index'])->name('auth.index');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('auth.login');
-Route::any('/logout', [LoginController::class, 'logout'])->name('auth.logout');
+Route::post('/logout', [LoginController::class, 'logout'])->name('auth.logout');
 
 Route::get('/register', [RegisterController::class, 'showForm'])->name('auth.register');
 Route::post('/register', [RegisterController::class, 'register'])->name('auth.register.store');
